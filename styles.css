@@ -23,7 +23,18 @@ body {
 h1 {
   text-align: center;
   color: #38bdf8;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  text-align: center;
+  color: #f87171;
+  font-size: 16px;
+  padding: 0 20px;
+}
+
+label {
+  color: #38bdf8;
 }
 
 /* 🧾 Formulario */
@@ -32,6 +43,7 @@ form {
   flex-direction: column;
   align-items: center;
   gap: 14px;
+  margin: 40px 0;
 }
 
 /* 🔢 Input */
@@ -63,11 +75,14 @@ button:hover {
   transform: scale(1.05);
 }
 
+ul {
+  padding: 0;
+}
+
 /* 📋 Lista */
 #asignaciones {
   margin-top: 25px;
   list-style: none;
-  padding: 0;
 }
 
 /* 🧱 Cada fila */
@@ -82,6 +97,17 @@ button:hover {
   border-left: 4px solid #0ea5e9;
   border-radius: 6px;
   font-size: 14px;
+}
+
+.fila-asignacion:last-child {
+  margin-top: 40px;
+}
+
+.fila-titulos {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
 
 /* 📊 Columnas */
