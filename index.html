@@ -13,9 +13,11 @@
 <body>
 
 <div class="container">
-  <h1>Asignaciones</h1>
+  <h1>Asignaciones BK</h1>
+  <h2>⚠️ Advertencia: Los horarios son cargados manualmente, si hay modificaciones pueden no estar actualizados. ⚠️</h2>
 
   <form id="formulario">
+    <label>Ingresá tu legajo:</label>
     <input type="text" id="legajo" placeholder="Legajo" required />
     <button type="submit">Consultar</button>
   </form>
@@ -25,7 +27,16 @@
     <p>Cargando...</p>
   </div>
 
-  <ul id="asignaciones"></ul>
+  <ul>
+    <li class="fila-titulos">
+      <span class="col-fecha">Día</span>
+      <span class="col-hora">Horario</span>
+      <span class="col-tiempo">Cant. Horas</span>
+    </li>
+  </ul>
+  <ul id="asignaciones">
+    
+  </ul>
 </div>
 
 <script src="main.js"></script>
