@@ -97,7 +97,7 @@ function mostrarAsignaciones(data) {
   total.classList.add("fila-asignacion");
 
   total.innerHTML = `
-    <span class="col-fecha"><strong>Total</strong></span>
+    <span class="col-fecha"><strong>Total horas</strong></span>
     <span class="col-hora"></span>
     <span class="col-tiempo"><strong>${totalHoras.toFixed(2)} hs</strong></span>
   `;
