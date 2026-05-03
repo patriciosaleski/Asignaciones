@@ -1,0 +1,171 @@
+/* 🔵 Base estilo "código" */
+
+body {
+  font-family: 'Consolas', 'Courier New', monospace;
+  background-color: #0f172a; /* azul oscuro */
+  color: #e2e8f0;
+  margin: 0;
+  padding: 20px;
+}
+
+/* 📦 Contenedor */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #020617;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+/* 🧠 Título */
+h1 {
+  text-align: center;
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+/* 🧾 Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+/* 🔢 Input */
+input[type="number"] {
+  padding: 10px;
+  width: 120px;
+  background: #020617;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  color: #e2e8f0;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* 🔘 Botón */
+button {
+  padding: 10px 20px;
+  background: #0ea5e9;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #0284c7;
+  transform: scale(1.05);
+}
+
+/* 📋 Lista */
+#asignaciones {
+  margin-top: 25px;
+  list-style: none;
+  padding: 0;
+}
+
+/* 🧱 Cada fila */
+.fila-asignacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color: #020617;
+  border-left: 4px solid #0ea5e9;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* 📊 Columnas */
+.col-fecha {
+  flex: 1;
+  color: #38bdf8;
+}
+
+.col-hora {
+  flex: 1;
+  text-align: center;
+  color: #22c55e;
+}
+
+.col-tiempo {
+  flex: 1;
+  text-align: center;
+  color: #facc15;
+}
+
+.col-tienda {
+  flex: 2;
+  text-align: right;
+  color: #cbd5f5;
+}
+
+/* 🔄 Loader */
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.spinner {
+  width: 30px;
+  height: 30px;
+  border: 4px solid #1e293b;
+  border-top: 4px solid #0ea5e9;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 📱 Responsive */
+@media (max-width: 480px) {
+  .fila-asignacion {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .col-fecha,
+  .col-hora,
+  .col-tiempo,
+  .col-tienda {
+    text-align: center;
+  }
+}
+
+/* ❌ Quitar flechas input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Chrome, Safari, Edge */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

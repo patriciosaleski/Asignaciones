@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Asignaciones BK</title>
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0ea5e9">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="container">
+  <h1>Asignaciones</h1>
+
+  <form id="formulario">
+    <input type="text" id="legajo" placeholder="Legajo" required />
+    <button type="submit">Consultar</button>
+  </form>
+
+  <div id="loader" class="loader hidden">
+    <div class="spinner"></div>
+    <p>Cargando...</p>
+  </div>
+
+  <ul id="asignaciones"></ul>
+</div>
+
+<script src="main.js"></script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
+
+</body>
+</html>
